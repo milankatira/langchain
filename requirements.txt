@@ -33,3 +33,5 @@ torch
 accelerate
 
 langchain-community
+
+sentence-transformers
