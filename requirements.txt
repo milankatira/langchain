@@ -1,25 +1,15 @@
 # LangChain Core
 langchain
 langchain-core
-
-# OpenAI Integration
-langchain-openai
-openai
-
-# Anthropic Integration
-langchain-anthropic
-
-# Google Gemini (PaLM) Integration
-langchain-google-genai
-google-generativeai
+langchain-community
 
 # Hugging Face Integration
 langchain-huggingface
 transformers
 huggingface-hub
-
-# Ollama client (for from langchain.llms import Ollama)
-ollama
+accelerate
+bitsandbytes
+torch
 
 # Environment Variable Management
 python-dotenv
@@ -27,11 +17,5 @@ python-dotenv
 # Machine Learning Utilities
 numpy
 scikit-learn
-
-# Required for your hf_api.py
-torch
-accelerate
-
-langchain-community
-
 sentence-transformers
+chromadb

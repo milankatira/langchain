@@ -1,0 +1,16 @@
+LangChain is a framework for developing applications powered by language models.
+It enables applications that:
+1. Are context-aware: connect a language model to sources of context (prompt instructions, few shot examples, content to ground its response in, etc.)
+2. Reason: rely on a language model to reason (about how to answer based on provided context, what actions to take, etc.)
+
+The main value props of LangChain are:
+1. Components: composable tools and integrations for working with language models. Components are modular and easy-to-use, whether you are using the rest of the LangChain framework or not
+2. Off-the-shelf chains: built-in assemblages of components for accomplishing higher-level tasks
+
+Off-the-shelf chains make it easy to get started. For complex applications, components make it easy to customize existing chains and build new ones.
+LangChain Expression Language (LCEL) is a declarative way to compose chains.
+LCEL was designed from day 1 to support putting prototypes in production, with no code changes, from the simplest “prompt + LLM” chain to the most complex chains (we’ve seen folks successfully run LCEL chains with 100s of steps in production).
+To highlight a few of the reasons you might want to use LCEL:
+1. Streaming support: When you build your chains with LCEL you get the best possible time-to-first-token (time until the first chunk of output comes out).
+2. Async support: Any chain built with LCEL can be called both with the synchronous API (eg. invoke) and the asynchronous API (eg. ainvoke).
+3. Optimized parallel execution: Whenever your LCEL chains have steps that can be executed in parallel (eg if you fetch documents from multiple retrievers), we automatically do it.
